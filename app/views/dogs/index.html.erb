@@ -1,0 +1,7 @@
+<h1> Here are all the pups! </h1>
+<% @dogs.each do |d| %>
+  Name: <p> <%= link_to d.name, dog_path(d) %> </p> 
+  Age : <p> <%= d.age%> </p> 
+<% end %>
+
+<%= link_to "new", dogs_new_path %>
